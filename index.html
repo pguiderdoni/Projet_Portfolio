@@ -91,14 +91,33 @@
               Je me tourne aujourd'hui vers le domaine qui m'attire depuis mon
               plus jeune âge, et m'engage dans une reconversion en tant que
               développeur d'applications web et mobiles grâce à Aflokkat.
-            </h3>
-            <button
-              class="btn bg-secondary border-3 border-primary mt-3 mb-3 rounded-2 text-white"
-            >
-              Découvrir
-            </button>
-          </div>
-          <div class="col-12 col-md-6">
+            </h3>    
+                <a href="#"
+                    class="btn bg-secondary border-3 border-primary mt-3 mb-3 rounded-2 text-white"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#projetCV">Plus d'infos</a>
+                  
+                <div class="offcanvas offcanvas-bottom h-100"
+                    tabindex="-1"
+                    id="projetCV"
+                    aria-labelledby="offcanvasBottomLabel">
+                    <div class="offcanvas-header align-items-end bg-light">
+                      <span></span>
+                      <button
+                        type="button"
+                        class="btn-close text-white"
+                        data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body small bg-light">
+                      <img
+                        src="img/cv.jpg"
+                        class="img-cards w-100 h-100"
+                        alt="cv"/>
+                    </div>
+                  </div>
+               </div>
+              <div class="col-12 col-md-6">
             <img src="img/portrait.jpg" alt="" class="w-100 rounded-3" />
           </div>
         </div>
@@ -110,7 +129,7 @@
     <section class="bg-light py-2">
       <div class="container my-3">
         <h2 class="fw-bolder fw-md-lighter">Mon Expertise</h2>
-        <h3 class="fw-light fw-md-lighter">Développement web et design</h3>
+        <h3 class="fw-light fw-md-lighter">Développement web</h3>
         <div class="row mt-4 align-items-md-center align-items-xl-center">
           <div class="col-12 col-md-6 pt-4">
             <!-- barre de progression 1 debut -->
