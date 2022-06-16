@@ -1,7 +1,7 @@
 let cv = document.getElementById("cv");
+
 cv.style.cursor = "zoom-in";
 cv.addEventListener("click", function () {
-  console.log(cv);
   if (cv.classList.contains("h-100")) {
     cv.classList.replace("h-100", "h-auto");
     cv.style.cursor = "zoom-out";
