@@ -7,3 +7,7 @@
   object-fit: contain;
   object-position: center;
 }
+.card:hover{
+  box-shadow: 22px 22px 18px rgb(80, 80, 80);
+  transition: box-shadow 400ms ease-in-out;
+}
