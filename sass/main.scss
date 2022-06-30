@@ -45,7 +45,9 @@ body {
     background:$buttonName;
     box-shadow: 5px -8px 0 $buttonName, 5px 8px 0 $buttonName;
   }
-  
+  .barresProgress{
+    background-color: $grisClair;
+  }
   // déco photos
   // .buttonContainer2 {
   //   position: relative;
