@@ -1,6 +1,6 @@
 @charset "UTF-8";
 body {
-  background-color: rgb(69, 69, 73);
+  background-color: rgb(75, 75, 81);
 }
 
 html {
@@ -8,15 +8,15 @@ html {
 }
 
 .canvasBG {
-  background-color: rgb(69, 69, 73);
+  background-color: rgb(75, 75, 81);
 }
 
 .navigationBar {
-  background-color: rgb(69, 69, 73);
+  background-color: rgb(75, 75, 81);
 }
 
 a.active {
-  color: rgba(140, 69, 187, 0.826);
+  color: rgba(110, 45, 153, 0.826);
   border-radius: 5px;
   /* border: 3px solid rgb(143, 142, 142); */
 }
@@ -41,7 +41,7 @@ a.active {
 }
 
 .buttonName {
-  background-color: rgba(140, 69, 187, 0.826);
+  background-color: rgba(110, 45, 153, 0.826);
 }
 
 /* Boutton néon animé */
@@ -126,10 +126,10 @@ a.active {
 
 /* Boutton néon animé */
 .bootsBar {
-  background-color: rgba(140, 69, 187, 0.826);
-  border: 1px solid rgba(140, 69, 187, 0.826);
+  background-color: rgba(110, 45, 153, 0.826);
+  border: 1px solid rgba(110, 45, 153, 0.826);
 }
 
 .bootsIcon {
-  color: rgba(140, 69, 187, 0.826);
+  color: rgba(110, 45, 153, 0.826);
 }/*# sourceMappingURL=main.css.map */
