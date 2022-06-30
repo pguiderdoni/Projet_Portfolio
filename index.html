@@ -15,7 +15,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="sass/main.css" />
     <script
       src="https://kit.fontawesome.com/a1b11d373d.js"
       crossorigin="anonymous"
@@ -31,11 +31,11 @@
   >
     <!-- barre nav debut -->
     <nav
-      class="navbar navbar-expand-md bg-light navbar-light fixed-top py-3 py-md-4"
+      class="navigationBar navbar navbar-expand-md navbar-light fixed-top py-3 py-md-4"
     >
       <div id="navBar" class="container">
-        <a class="navbar-brand fw-bold" href="#qui">
-          <span class="bg-secondary bg-gradient p-1 rounded-3 text-light">
+        <a class="navbar-brand fw-bold text-light" href="#qui">
+          <span class="buttonName bg-gradient p-1 rounded-3 text-light">
             Pierre
           </span>
           GUIDERDONI
@@ -58,38 +58,42 @@
           <!-- nav nav-pills/ nav nav-tabs -->
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" href="#qui">Qui suis-je?</a>
+              <a class="nav-link active text-light" href="#qui">Qui suis-je?</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#expertise">Expertises</a>
+              <a class="nav-link text-light" href="#expertise">Expertises</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#portfolio">Portfolio</a>
+              <a class="nav-link text-light" href="#portfolio">Portfolio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
+              <a class="nav-link text-light" href="#contact">Contact</a>
             </li>
             <li class="nav-item">
-              <img src="img/Ishi-round-icon.png" class="" alt="" />
+              <img
+                src="img/Ishi-round-icon.png"
+                class="rounded-circle"
+                alt=""
+              />
             </li>
           </ul>
         </div>
       </div>
     </nav>
+    <span id="qui"></span>
     <!-- barre nav fin -->
     <!-- Section 1 debut -->
-    <span id="qui"></span>
     <section class="mt-4 mt-md-5 py-5 pt-md-5">
       <div class="container">
         <div
           class="row gy-2 gy-md-0 justify-content-center align-items-md-center"
         >
           <div class="col-12 col-md-6">
-            <h1 class="fw-bolder fw-md-lighter">
+            <h1 class="fw-bolder fw-md-lighter text-white">
               Développeur d'applications web en formation
             </h1>
             <br />
-            <h3 class="fw-light fw-md-lighter text-indent-e">
+            <h3 class="fw-light fw-md-lighter text-indent-e text-white">
               <span class="me-5"></span> Titulaire d'un Bac Pro en Génie
               Climatique et d'un certificat d'Auxiliaire de Santé Animale, j'ai
               travaillé en Afrique (Djibouti, Kenya, Afrique du Sud) dans la
@@ -100,20 +104,22 @@
               plus jeune âge, et m'engage dans une reconversion en tant que
               développeur d'applications web et mobiles grâce à Aflokkat.
             </h3>
-            <a
-              href="#"
-              class="btn bg-secondary border-3 border-primary mt-3 mb-3 rounded-2 text-white"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#projetCV"
-              >Plus d'infos</a
-            >
+            <div class="buttonContainer mt-5 mt-md-4">
+              <a
+                href="#"
+                class="btn"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#projetCV"
+                ><span>Plus d'infos</span></a
+              >
+            </div>
             <div
               class="offcanvas offcanvas-bottom h-100"
               tabindex="-1"
               id="projetCV"
               aria-labelledby="offcanvasBottomLabel"
             >
-              <div class="offcanvas-header align-items-end bg-light">
+              <div class="canvasBG offcanvas-header align-items-end">
                 <span></span>
                 <button
                   type="button"
@@ -122,7 +128,7 @@
                   aria-label="Close"
                 ></button>
               </div>
-              <div class="offcanvas-body small bg-light">
+              <div class="canvasBG offcanvas-body small">
                 <img
                   id="cv"
                   src="img/cv_page-0001.jpg"
@@ -132,7 +138,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6">
+          <div class="col-12 col-md-6 mt-5 mt-md-0">
             <img src="img/nCage.jpg" alt="" class="w-100 rounded-3" />
           </div>
         </div>
@@ -205,13 +211,13 @@
             <!-- barre de progression 2 fin -->
             <!-- barre de progression 3 debut -->
             <div
-              class="bg-white p-3 mb-4 rounded-3 border border-danger shadow p-3 bg-body rounded"
+              class="bg-white p-3 mb-4 rounded-3 bootsBar shadow p-3 bg-body rounded"
             >
               <div class="row align-items-center">
                 <div class="col-5 col-sm-4 col-md-5 col-lg-4 col-xl-3">
                   <div class="d-flex">
                     <i
-                      class="fa-brands fa-bootstrap fa-2x pt-2 pt-md-2 pt-md-2 pt-lg-2 me-1 me-sm-3 me-md-2 me-xl-2 text-danger"
+                      class="fa-brands fa-bootstrap fa-2x pt-2 pt-md-2 pt-md-2 pt-lg-2 me-1 me-sm-3 me-md-2 me-xl-2 bootsIcon"
                     ></i>
                     <p
                       class="fw-bold ms-2 ms-sm-0 ms-md-1 pt-2 pt-md-2 pt-lg-2"
@@ -223,7 +229,7 @@
                 <div class="col align-items-center">
                   <div class="progress">
                     <div
-                      class="progress-bar bg-danger progress-bar-striped progress-bar-animated"
+                      class="bootsBar progress-bar progress-bar-striped progress-bar-animated"
                       style="width: 60%"
                     ></div>
                   </div>
@@ -420,7 +426,6 @@
                 </div>
               </div>
             </div>
-
             <!-- barre de progression 9 debut -->
             <!-- barre de progression 10 debut -->
             <div
@@ -497,8 +502,10 @@
     <section class="my-5 my-md-5">
       <div class="container">
         <div class="row mb-md-4">
-          <h2 class="fw-bolder fw-md-lighter">Mon Portfolio</h2>
-          <h3 class="fw-light fw-md-lighter">Projets persos et pros</h3>
+          <h2 class="fw-bolder fw-md-lighter text-white">Mon Portfolio</h2>
+          <h3 class="fw-light fw-md-lighter text-white">
+            Projets persos et pros
+          </h3>
         </div>
         <div class="row g-5 g-sm-5">
           <!-- Carte 1 debut -->
@@ -764,7 +771,6 @@
           <!-- Carte 4 fin -->
         </div>
       </div>
-      <span id="contact"></span>
     </section>
     <!-- Section 3 fin -->
     <!-- Section 4 debut -->
@@ -843,15 +849,19 @@
       <div class="container">
         <div class="row d-flex">
           <div class="col-12 col-md-4 text-center text-md-start">
-            <a class="btn" href="#"
-              ><span class="bg-secondary bg-gradient p-1 rounded-3 text-light">
+            <a class="btn text-white" href="#"
+              ><span class="buttonName bg-gradient p-1 rounded-3 text-white">
                 Pierre
               </span>
               GUIDERDONI
             </a>
           </div>
           <div class="col-12 col-md-4 text-center">
-            <a class="btn" data-bs-toggle="modal" data-bs-target="#mentions">
+            <a
+              class="btn text-white"
+              data-bs-toggle="modal"
+              data-bs-target="#mentions"
+            >
               Mentions légales
             </a>
           </div>
@@ -875,15 +885,16 @@
             </div>
           </div>
           <!-- mentions legales fin -->
-          <div class="col-12 col-md-4 text-center text-md-end">
+          <div class="col-12 col-md-4 text-center text-md-end text-white">
             Retrouvez-moi sur:
             <a
               class="btn"
               href="www.linkedin.com/in/pierre-guiderdoni-355954240"
             >
-              <i class="fa-brands fa-linkedin fs-4 fs-md-2"> </i>
+              <i class="text-white fa-brands fa-linkedin fs-4 fs-md-2"> </i>
             </a>
           </div>
+          <span id="contact"></span>
         </div>
       </div>
     </footer>
