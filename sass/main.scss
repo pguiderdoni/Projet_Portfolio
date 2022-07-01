@@ -45,36 +45,10 @@ body {
     background:$buttonName;
     box-shadow: 5px -8px 0 $buttonName, 5px 8px 0 $buttonName;
   }
-  .barresProgress{
-    background-color: $grisClair;
-  }
-  // déco photos
-  // .buttonContainer2 {
-  //   position: relative;
-  //   display: inline-block;
-  //   padding: 0px 0px;
-  //   border-top: 2px solid $buttonColor;
-  //   border-right: 2px solid $buttonColor;
-  //   border-radius: 3px;
-  //   border-top-right-radius: 50px 50px;
+  // .barresProgress{
+  //   background-color: $grisClair;
   // }
-  // .buttonContainer2::after {
-  //   content: "";
-  //   position: absolute;
-  //   right: -25px;
-  //   top: 50%;
-  //   transform: translateY(-50%);
-  //   width: 25px;
-  //   height: 2px;
-  //   background: $buttonColor;
-  //   box-shadow: -5px -8px 0 $buttonColor, -5px 8px 0 $buttonColor;
-  // }
-  // .buttonContainerImg {
-  //   border-radius: 3px;
-  //   border-top-right-radius: 50px 50px;
-  // }
-  // déco photos
-  
+
   /* Boutton néon animé */
   .buttonContainer {
     display: flex;
@@ -86,7 +60,7 @@ body {
     display: inline-block;
     padding: 15px 30px;
     border: 2px solid $buttonColor;
-    // border-radius: 15px;
+    border-radius: 15px;
     text-decoration: none;
     letter-spacing: 2px;
     color: white;

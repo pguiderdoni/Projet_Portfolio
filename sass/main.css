@@ -56,10 +56,6 @@ a.active {
   box-shadow: 5px -8px 0 rgb(255, 105, 0), 5px 8px 0 rgb(255, 105, 0);
 }
 
-.barresProgress {
-  background-color: rgb(230, 227, 227);
-}
-
 /* Boutton néon animé */
 .buttonContainer {
   display: flex;
@@ -72,6 +68,7 @@ a.active {
   display: inline-block;
   padding: 15px 30px;
   border: 2px solid rgb(255, 105, 0);
+  border-radius: 15px;
   text-decoration: none;
   letter-spacing: 2px;
   color: white;

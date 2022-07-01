@@ -11910,12 +11910,22 @@ body {
   background-color: rgb(40, 40, 44);
 }
 
+.sectionClaire {
+  background-color: rgb(185, 189, 200);
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 .navigationBar {
+  border-bottom: 1px solid rgb(185, 189, 200);
   background-color: rgb(40, 40, 44);
+}
+
+.anchor {
+  margin-top: -20px;
+  padding-top: 20px;
 }
 
 .carousel-item {
@@ -11940,6 +11950,7 @@ html {
 .buttonName {
   position: relative;
   border: 1px solid rgb(255, 105, 0);
+  border-radius: 10px;
 }
 
 .buttonName::before {
@@ -11970,6 +11981,7 @@ html {
   display: inline-block;
   padding: 15px 30px;
   border: 2px solid rgb(255, 105, 0);
+  border-radius: 15px;
   text-decoration: none;
   font-weight: 600;
   letter-spacing: 2px;
