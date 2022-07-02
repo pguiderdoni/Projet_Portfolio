@@ -1,7 +1,7 @@
 @charset "UTF-8";
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: rgb(40, 40, 44);
+  background-color: rgb(44, 41, 40);
 }
 
 html {
@@ -9,11 +9,11 @@ html {
 }
 
 .canvasBG {
-  background-color: rgb(40, 40, 44);
+  background-color: rgb(44, 41, 40);
 }
 
 .navigationBar {
-  background-color: rgb(40, 40, 44);
+  background-color: rgb(44, 41, 40);
 }
 
 a.active {

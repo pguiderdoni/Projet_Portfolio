@@ -1,145 +1,214 @@
 @import "Utils/variables";
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
-
+*::before, *::after{
+box-sizing: border-box;
+}
 body {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    background-color: $grisAnth;
-  }
-  .sectionClaire{
-    background-color: $sectionClaire;
-  }
-  html {
-    scroll-behavior: smooth;
-  }
-  .navigationBar {
-    border-bottom: 1px solid $sectionClaire;
-    background-color: $grisAnth;
-  }
-  .offcanvas-body, .offcanvas-header{
-    background-color: $sectionClaire;
-  }
- .anchor{
-    margin-top: -20px;
-    padding-top: 20px;
-  }
-  .carousel-item {
-    height: 90vh;
-    object-fit: contain;
-  }
-  .img-cards {
-    height: 90vh;
-    object-fit: contain;
-    object-position: center;
-  }
-  .card:hover {
-    box-shadow: 22px 22px 18px rgb(80, 80, 80);
-    transition: box-shadow 400ms ease-in-out;
-  }
-  .buttonName {
-    position: relative;
-    border: 1px solid $buttonName;
-    border-radius: 10px;
-  }
-  .buttonName::before {
-    content: "";
-    position: absolute;
-    left: -15px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 15px;
-    height: 1px;
-    background: $buttonName;
-    box-shadow: 5px -8px 0 $buttonName, 5px 8px 0 $buttonName;
-  }
-  .nav-item:active{
-    border: 1px solid $buttonName;
-  }
-  
-  /* Boutton néon animé */
-  .buttonContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .buttonContainer a {
-    position: relative;
-    display: inline-block;
-    padding: 15px 30px;
-    border: 2px solid rgb(255, 105, 0);
-    border-radius: 15px;
-    text-decoration: none;
-    font-weight: 600;
-    letter-spacing: 2px;
-    color: white;
-    text-transform: uppercase;
-    -webkit-box-reflect: below 0px linear-gradient(transparent);
-    transition: 0.5s;
-    transition-delay: 0s;
-  }
-  .buttonContainer a:hover {
-    transition-delay: 1s;
-    overflow: hidden;
-    border: 2px solid rgb(255, 105, 0);
-    border-radius: 15px;
-    color: rgb(0, 0, 0);
-    box-shadow: 0 0 10px rgb(255, 105, 0), 0 0 20px rgb(255, 105, 0), 0 0 40px rgb(255, 105, 0), 0 0 80px rgb(255, 105, 0), 0 0 160px rgb(255, 105, 0);
-  }
-  .buttonContainer a:hover::before {
-    width: 60%;
-    height: 100%;
-    left: -2px;
-    box-shadow: 5px 0 0 rgb(255, 105, 0), 5px 0 0 rgb(255, 105, 0);
-    transition-delay: 0s, 0.5s, 1s, 1s;
-  }
-  .buttonContainer a:hover::after {
-    width: 60%;
-    height: 100%;
-    right: -2px;
-    box-shadow: -5px 0 0 rgb(255, 105, 0), -5px 0 0 rgb(255, 105, 0);
-    transition-delay: 0s, 0.5s, 1s, 1s;
-  }
-  .buttonContainer a span {
-    position: relative;
-    z-index: 100;
-  }
-  .buttonContainer a:nth-child(2) {
-    filter: hue-rotate(80deg);
-  }
-  .buttonContainer a::before {
-    content: "";
-    position: absolute;
-    left: -20px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 20px;
-    height: 2px;
-    background: rgb(255, 105, 0);
-    box-shadow: 5px -8px 0 rgb(255, 105, 0), 5px 8px 0 rgb(255, 105, 0);
-    transition: width 0.5s, left 0.5s, height 0.5s, box-shadow 0.5s;
-    transition-delay: 1s, 0.5s, 0s, 0s;
-  }
-  .buttonContainer a::after {
-    content: "";
-    position: absolute;
-    right: -20px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 20px;
-    height: 2px;
-    background: rgb(255, 105, 0);
-    box-shadow: -5px -8px 0 rgb(255, 105, 0), -5px 8px 0 rgb(255, 105, 0);
-    transition: width 0.5s, right 0.5s, height 0.5s, box-shadow 0.5s;
-    transition-delay: 1s, 0.5s, 0s, 0s;
-  }
-  
-  /* Boutton néon animé */
+font-family: 'Ubuntu', sans-serif;
+background-color: $grisAnth;
+}
+.sectionClaire{
+background-color: $sectionClaire;
+}
+html {
+scroll-behavior: smooth;
+}
+.navigationBar {
+border-bottom: 1px solid $sectionClaire;
+background-color: $grisAnth;
+}
+.offcanvas-body, .offcanvas-header{
+background-color: $sectionClaire;
+}
+.anchor{
+margin-top: -20px;
+padding-top: 20px;
+}
+.carousel-item {
+height: 90vh;
+object-fit: contain;
+}
+.img-cards {
+height: 90vh;
+object-fit: contain;
+object-position: center;
+}
+.card:hover {
+box-shadow: 22px 22px 18px rgb(80, 80, 80);
+transition: box-shadow 400ms ease-in-out;
+}
+.buttonName {
+position: relative;
+border: 1px solid $buttonName;
+border-radius: 10px;
+}
+.buttonName::before {
+content: "";
+position: absolute;
+left: -15px;
+top: 50%;
+transform: translateY(-50%);
+width: 15px;
+height: 1px;
+background: $buttonName;
+box-shadow: 5px -8px 0 $buttonName, 5px 8px 0 $buttonName;
+}
+.nav-item:active{
+border: 1px solid $buttonName;
+}
 
 
-  .bootsBar {
-    background-color: $purple;
-    border: 1px solid $purple;
-  }
-  .bootsIcon {
-    color: $purple;
-  }
-  
+// boutton effet neon
+.neon-button{
+cursor: pointer;
+position: relative;
+font-size: 2rem;
+font-weight: 700;
+width: 15rem;
+text-decoration: none;
+color: $neon;
+border: $neon 0.125em solid;
+padding:  0.25em 1em;
+border-radius: 5em;
+text-shadow: 0 0 0.125em hsl(0 0% 100%/0.4),
+0 0 0.5em $neon ;
+box-shadow: inset 0 0 1em 0 $neon, 0 0 1em 0 $neon;
+transition: background-color 100ms linear;
+}
+.neon-button::before{
+pointer-events: none;
+content: "";
+position: absolute;
+background: $neon;
+top:115%;
+left: 0;
+width: 100%;
+height: 100%;
+transform: perspective(1.5em) rotateX(40deg) scale(1, 0.4);
+filter: blur(1em);
+opacity: 0.8;
+}
+.neon-button::after{
+content: "";
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+border-radius: 5em;
+background: $neon;
+box-shadow: 0 0 1em .5em $neon;
+opacity: 0;
+transition: opacity 100ms linear;
+background-color: $neon;
+z-index: -1;
+}
+.neon-button:hover::after{
+opacity: 1;
+}
+.neon-button:hover::before,
+.neon-button:focus::before{
+opacity: 1;
+transform: perspective(.7em) rotateX(40deg) scale(1, 0.4);
+filter: blur(1em);
+}
+.neon-button:hover::after,
+.neon-button:focus::after{
+opacity: 1;
+}
+.neon-button:hover,
+.neon-button:focus{
+color: $grisAnth;
+text-shadow: none;
+}
+// boutton effet neon
+
+
+
+
+/* Boutton néon animé */
+.buttonContainer {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.buttonContainer a {
+position: relative;
+display: inline-block;
+padding: 1em 2em;
+border: 2px solid rgb(255, 105, 0);
+border-radius: 1em;
+text-decoration: none;
+font-weight: 600;
+letter-spacing: 2px;
+color: white;
+text-transform: uppercase;
+-webkit-box-reflect: below 0px linear-gradient(transparent);
+transition: 0.5s;
+transition-delay: 0s;
+}
+.buttonContainer a:hover {
+transition-delay: 1s;
+overflow: hidden;
+border: 2px solid rgb(255, 105, 0);
+border-radius: 1em;
+color: rgb(0, 0, 0);
+box-shadow: 0 0 10px rgb(255, 105, 0), 0 0 20px rgb(255, 105, 0), 0 0 40px rgb(255, 105, 0), 0 0 80px rgb(255, 105, 0), 0 0 160px rgb(255, 105, 0);
+}
+.buttonContainer a:hover::before {
+width: 60%;
+height: 100%;
+left: -2px;
+box-shadow: 5px 0 0 rgb(255, 105, 0), 5px 0 0 rgb(255, 105, 0);
+transition-delay: 0s, 0.5s, 1s, 1s;
+}
+.buttonContainer a:hover::after {
+width: 60%;
+height: 100%;
+right: -2px;
+box-shadow: -5px 0 0 rgb(255, 105, 0), -5px 0 0 rgb(255, 105, 0);
+transition-delay: 0s, 0.5s, 1s, 1s;
+}
+.buttonContainer a span {
+position: relative;
+z-index: 100;
+}
+.buttonContainer a:nth-child(2) {
+filter: hue-rotate(80deg);
+}
+.buttonContainer a::before {
+content: "";
+position: absolute;
+left: -20px;
+top: 50%;
+transform: translateY(-50%);
+width: 20px;
+height: 2px;
+background: rgb(255, 105, 0);
+box-shadow: 5px -8px 0 rgb(255, 105, 0), 5px 8px 0 rgb(255, 105, 0);
+transition: width 0.5s, left 0.5s, height 0.5s, box-shadow 0.5s;
+transition-delay: 1s, 0.5s, 0s, 0s;
+}
+.buttonContainer a::after {
+content: "";
+position: absolute;
+right: -20px;
+top: 50%;
+transform: translateY(-50%);
+width: 20px;
+height: 2px;
+background: rgb(255, 105, 0);
+box-shadow: -5px -8px 0 rgb(255, 105, 0), -5px 8px 0 rgb(255, 105, 0);
+transition: width 0.5s, right 0.5s, height 0.5s, box-shadow 0.5s;
+transition-delay: 1s, 0.5s, 0s, 0s;
+}
+/* Boutton néon animé */
+
+
+.bootsBar {
+background-color: $purple;
+border: 1px solid $purple;
+}
+.bootsIcon {
+color: $purple;
+}

@@ -11905,9 +11905,13 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+*::before, *::after {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: rgb(40, 40, 44);
+  font-family: "Ubuntu", sans-serif;
+  background-color: rgb(44, 41, 40);
 }
 
 .sectionClaire {
@@ -11920,7 +11924,7 @@ html {
 
 .navigationBar {
   border-bottom: 1px solid rgb(185, 189, 200);
-  background-color: rgb(40, 40, 44);
+  background-color: rgb(44, 41, 40);
 }
 
 .offcanvas-body, .offcanvas-header {
@@ -11973,6 +11977,74 @@ html {
   border: 1px solid rgb(255, 89, 0);
 }
 
+.neon-button {
+  cursor: pointer;
+  position: relative;
+  font-size: 2rem;
+  font-weight: 700;
+  width: 15rem;
+  text-decoration: none;
+  color: hsl(14deg, 100%, 55%);
+  border: hsl(14deg, 100%, 55%) 0.125em solid;
+  padding: 0.25em 1em;
+  border-radius: 5em;
+  text-shadow: 0 0 0.125em hsla(0deg, 0%, 100%, 0.4), 0 0 0.5em hsl(14deg, 100%, 55%);
+  box-shadow: inset 0 0 1em 0 hsl(14deg, 100%, 55%), 0 0 1em 0 hsl(14deg, 100%, 55%);
+  transition: background-color 100ms linear;
+}
+
+.neon-button::before {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  background: hsl(14deg, 100%, 55%);
+  top: 115%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: perspective(1.5em) rotateX(40deg) scale(1, 0.4);
+  filter: blur(1em);
+  opacity: 0.8;
+}
+
+.neon-button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 5em;
+  background: hsl(14deg, 100%, 55%);
+  box-shadow: 0 0 1em 0.5em hsl(14deg, 100%, 55%);
+  opacity: 0;
+  transition: opacity 100ms linear;
+  background-color: hsl(14deg, 100%, 55%);
+  z-index: -1;
+}
+
+.neon-button:hover::after {
+  opacity: 1;
+}
+
+.neon-button:hover::before,
+.neon-button:focus::before {
+  opacity: 1;
+  transform: perspective(0.7em) rotateX(40deg) scale(1, 0.4);
+  filter: blur(1em);
+}
+
+.neon-button:hover::after,
+.neon-button:focus::after {
+  opacity: 1;
+}
+
+.neon-button:hover,
+.neon-button:focus {
+  color: rgb(44, 41, 40);
+  text-shadow: none;
+}
+
 /* Boutton néon animé */
 .buttonContainer {
   display: flex;
@@ -11983,9 +12055,9 @@ html {
 .buttonContainer a {
   position: relative;
   display: inline-block;
-  padding: 15px 30px;
+  padding: 1em 2em;
   border: 2px solid rgb(255, 105, 0);
-  border-radius: 15px;
+  border-radius: 1em;
   text-decoration: none;
   font-weight: 600;
   letter-spacing: 2px;
@@ -12000,7 +12072,7 @@ html {
   transition-delay: 1s;
   overflow: hidden;
   border: 2px solid rgb(255, 105, 0);
-  border-radius: 15px;
+  border-radius: 1em;
   color: rgb(0, 0, 0);
   box-shadow: 0 0 10px rgb(255, 105, 0), 0 0 20px rgb(255, 105, 0), 0 0 40px rgb(255, 105, 0), 0 0 80px rgb(255, 105, 0), 0 0 160px rgb(255, 105, 0);
 }
