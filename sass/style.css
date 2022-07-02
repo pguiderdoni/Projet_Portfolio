@@ -11923,6 +11923,10 @@ html {
   background-color: rgb(40, 40, 44);
 }
 
+.offcanvas-body, .offcanvas-header {
+  background-color: rgb(185, 189, 200);
+}
+
 .anchor {
   margin-top: -20px;
   padding-top: 20px;
@@ -11949,7 +11953,7 @@ html {
 
 .buttonName {
   position: relative;
-  border: 1px solid rgb(255, 105, 0);
+  border: 1px solid rgb(255, 89, 0);
   border-radius: 10px;
 }
 
@@ -11961,12 +11965,12 @@ html {
   transform: translateY(-50%);
   width: 15px;
   height: 1px;
-  background: rgb(255, 105, 0);
-  box-shadow: 5px -8px 0 rgb(255, 105, 0), 5px 8px 0 rgb(255, 105, 0);
+  background: rgb(255, 89, 0);
+  box-shadow: 5px -8px 0 rgb(255, 89, 0), 5px 8px 0 rgb(255, 89, 0);
 }
 
 .nav-item:active {
-  border: 1px solid rgb(255, 105, 0);
+  border: 1px solid rgb(255, 89, 0);
 }
 
 /* Boutton néon animé */
@@ -11997,8 +12001,24 @@ html {
   overflow: hidden;
   border: 2px solid rgb(255, 105, 0);
   border-radius: 15px;
-  color: #000;
+  color: rgb(0, 0, 0);
   box-shadow: 0 0 10px rgb(255, 105, 0), 0 0 20px rgb(255, 105, 0), 0 0 40px rgb(255, 105, 0), 0 0 80px rgb(255, 105, 0), 0 0 160px rgb(255, 105, 0);
+}
+
+.buttonContainer a:hover::before {
+  width: 60%;
+  height: 100%;
+  left: -2px;
+  box-shadow: 5px 0 0 rgb(255, 105, 0), 5px 0 0 rgb(255, 105, 0);
+  transition-delay: 0s, 0.5s, 1s, 1s;
+}
+
+.buttonContainer a:hover::after {
+  width: 60%;
+  height: 100%;
+  right: -2px;
+  box-shadow: -5px 0 0 rgb(255, 105, 0), -5px 0 0 rgb(255, 105, 0);
+  transition-delay: 0s, 0.5s, 1s, 1s;
 }
 
 .buttonContainer a span {
@@ -12024,14 +12044,6 @@ html {
   transition-delay: 1s, 0.5s, 0s, 0s;
 }
 
-.buttonContainer a:hover::before {
-  width: 60%;
-  height: 100%;
-  left: -2px;
-  box-shadow: 5px 0 0 rgb(255, 105, 0), 5px 0 0 rgb(255, 105, 0);
-  transition-delay: 0s, 0.5s, 1s, 1s;
-}
-
 .buttonContainer a::after {
   content: "";
   position: absolute;
@@ -12042,16 +12054,8 @@ html {
   height: 2px;
   background: rgb(255, 105, 0);
   box-shadow: -5px -8px 0 rgb(255, 105, 0), -5px 8px 0 rgb(255, 105, 0);
-  transition: width 0.5s, left 0.5s, height 0.5s, box-shadow 0.5s;
+  transition: width 0.5s, right 0.5s, height 0.5s, box-shadow 0.5s;
   transition-delay: 1s, 0.5s, 0s, 0s;
-}
-
-.buttonContainer a:hover::after {
-  width: 60%;
-  height: 100%;
-  right: -2px;
-  box-shadow: -5px 0 0 rgb(255, 105, 0), -5px 0 0 rgb(255, 105, 0);
-  transition-delay: 0s, 0.5s, 1s, 1s;
 }
 
 /* Boutton néon animé */

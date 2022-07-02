@@ -41,7 +41,7 @@ a.active {
 
 .buttonName {
   position: relative;
-  border: 1px solid rgb(255, 105, 0);
+  border: 1px solid rgb(255, 89, 0);
 }
 
 .buttonName::before {
@@ -52,8 +52,8 @@ a.active {
   transform: translateY(-50%);
   width: 15px;
   height: 1px;
-  background: rgb(255, 105, 0);
-  box-shadow: 5px -8px 0 rgb(255, 105, 0), 5px 8px 0 rgb(255, 105, 0);
+  background: rgb(255, 89, 0);
+  box-shadow: 5px -8px 0 rgb(255, 89, 0), 5px 8px 0 rgb(255, 89, 0);
 }
 
 /* Boutton néon animé */
