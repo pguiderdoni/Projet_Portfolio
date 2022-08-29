@@ -1,4 +1,4 @@
-let cv = document.getElementById("cv");
+const cv = document.getElementById("cv");
 
 cv.style.cursor = "zoom-in";
 cv.addEventListener("click", function () {
